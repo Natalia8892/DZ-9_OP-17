@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myunique">
+        <p>Some text here</p>
+        <h2>Another text</h2>
+    </div>
+    <script>
+        var el = document.getElementById('myunique');
+        el.classList.toggle("www");
+        el.classList.remove("www");                        //удаление класса
+        if (el.classList.contains("www")) {
+            console.log("true")
+        } else {
+            console.log("false")
+        }
+    </script>
+</body>
+
+</html>
