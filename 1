@@ -10,13 +10,22 @@
 
 
 <body>
-    <button id="btn">Button</button>
+    <form id="Hey!">     //вариант 1
+        <input type="button" onclick=alert(document.forms[1].id); value="Button" />
+    </form>
+
+
+    <form>              // вариант 2 
+        <button id="btn">Button</button>
+    </form>
+
     <script>
         var el = document.getElementById("btn");
         el.addEventListener("click", function(event) {
             alert("Hey!");
         });
     </script>
+
 </body>
 
 
