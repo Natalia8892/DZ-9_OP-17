@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 10</title>
+</head>
+
+<body>
+    <div id="myunique">
+        <p>Some text here</p>
+        <h2>Another text</h2>
+    </div>
+    <script>
+        var el = document.getElementById('myunique');
+        el.addEventListener("click", function(event) {
+            console.log(el.tagName.toLowerCase())
+        });
+    </script>
+</body>
+
+</html>
