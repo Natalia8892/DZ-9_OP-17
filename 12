@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 12</title>
+</head>
+
+<body>
+    <ol id="ol">
+        <li>1</li>
+        <li>2</li>
+    </ol>
+
+    <script>
+        var li = document.createElement('li');
+        li.innerHTML = 'HELLO WORLD!';
+        ol.append(li);
+    </script>
+</body>
