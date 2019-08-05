@@ -27,7 +27,7 @@
         var lastEl = my.lastElementChild;
         var btn = document.getElementById("btn");
         btn.addEventListener("click", function(event) {
-            lastEl.remove(myEl)
+            myEl.removeChild(lastEl)
         });
     </script>
 
