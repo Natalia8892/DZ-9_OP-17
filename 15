@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 15</title>
+</head>
+
+<body>
+
+    <ol id="my">
+        <form>
+            <input type="button" id="btn" ; value="Button">
+        </form>
+        <div>
+            <li>Text</li>
+            <li>Text 1</li>
+        </div>
+        <p>Text p</p>
+        <li>Text 2</li>
+    </ol>
+
+    <script>
+        var myEl = document.getElementById("my");
+        var lastEl = my.lastElementChild;
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", function(event) {
+            lastEl.remove(myEl)
+        });
+    </script>
+
+
+</body>
