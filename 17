@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 17</title>
+</head>
+
+<body>
+    <form>
+        <input type="button" id="btn" ; value="Press">
+        <input type="date" id="el">
+    </form>
+
+    <script>
+        var btn = document.getElementById('btn');
+        var el = document.getElementById('el');
+
+        btn.addEventListener('click', function(event) {
+            var clone = el.cloneNode(true);
+            el.parentElement.appendChild(clone);
+        })
+    </script>
+</body>
+
+</html>
