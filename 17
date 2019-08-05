@@ -9,18 +9,19 @@
 </head>
 
 <body>
-    <form>
+    <form id="parent">
         <input type="button" id="btn" ; value="Press">
         <input type="date" id="el">
     </form>
 
     <script>
+        var parent = document.getElementById("parent");
         var btn = document.getElementById('btn');
         var el = document.getElementById('el');
 
         btn.addEventListener('click', function(event) {
             var clone = el.cloneNode(true);
-            el.parentElement.appendChild(clone);
+            parent.appendChild(clone);
         })
     </script>
 </body>
