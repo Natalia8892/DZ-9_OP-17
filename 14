@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 14</title>
+</head>
+
+<body>
+    <ul>
+        <div>
+            <li>Text</li>
+            <li>Text 1</li>
+        </div>
+        <p>Text p</p>
+        <li id="elem">Text 2</li>
+
+    </ul>
+
+    <script>
+        var b = document.getElementById("elem").previousElementSibling;
+        b.innerHTML += "!"
+    </script>
+
+
+</body>
