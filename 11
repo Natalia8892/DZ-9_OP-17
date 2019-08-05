@@ -12,14 +12,19 @@
     <div class="www">
         <p>TEXT</p>
     </div>
-    <h2 class="www">ANOTHER TEXT</h2>
+    <p class="www">ANOTHER TEXT</p>
+    <h5 class="www">Some TEXT</h5>
 
     <script>
-        var el = document.getElementsByClassName("www");
-        for (var i of el) {
-            var newEl = i.innerText + " " + i.tagName.toLowerCase()
-            console.log(newEl)
+        function $() {
+            var el = document.getElementsByClassName("www");
+            for (var i = 0, len = el.length; i < len; i++) {
+                var newEl = el[i].innerText + " " + el[i].tagName.toLowerCase()
+                document.body.innerHTML += newEl + "<br>"
+            }
         }
+
+        $()
     </script>
 </body>
 
