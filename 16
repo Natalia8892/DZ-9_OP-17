@@ -20,7 +20,7 @@
         console.log(parent, children)
         for (var i = 0, len = children.length; i < len; i++) {
             children[i].addEventListener("click", function(event) {
-                this.parentElement.removeChild(this)
+                this.parentElement.removeChild(event.target)
 
             })
         }
