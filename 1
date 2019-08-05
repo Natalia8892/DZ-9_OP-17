@@ -1,4 +1,53 @@
-<!DOCTYPE html>
+<!DOCTYPE html>                                  // вариант 1
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 1</title>
+</head>
+
+<body>
+    <form>
+        <button id="btn">Button</button>
+    </form>
+
+    <script>
+        var el = document.getElementById("btn");
+        el.addEventListener("click", function(event) {
+            alert("Hey!");
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>                                    //вариант 2
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 1</title>
+</head>
+
+<body>
+    <form id="btn">
+        <input type="button" onclick="alert('Hey!');" value="Button" />
+    </form>
+
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>                              //вариант 3
 <html lang="en">
 
 <head>
@@ -10,13 +59,8 @@
 
 
 <body>
-    <form id="btn">     //вариант 1
-        <input type="button" onclick="alert('Hey!');" value="Button" />
-    </form>
-
-
-    <form>              // вариант 2 
-        <button id="btn">Button</button>
+    <form id="btn">
+        <input type="button" ; value="Button">
     </form>
 
     <script>
