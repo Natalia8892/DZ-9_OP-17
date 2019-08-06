@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 3</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="txt" onkeypress="doFunction()">
+
+    </form>
+    <script>
+        function doFunction() {
+            var elv = document.getElementById('txt').value;
+            var number = isNaN(+elv)
+            if (number === false) {
+                txt.style.color = "green"
+            } else {
+                txt.style.color = "red"
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
